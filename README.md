@@ -1,4 +1,4 @@
-**# DietWise — AI-Powered Diet Manager
+## DietWise — AI-Powered Diet Manager
 
 A full-featured diet management app built with React + Vite + Tailwind CSS, powered by **free AI** via Groq.
 
