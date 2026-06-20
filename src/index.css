@@ -1,0 +1,35 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * { box-sizing: border-box; }
+  body {
+    background-color: #ffffff;
+    color: #111827;
+    font-family: 'Inter', system-ui, sans-serif;
+    -webkit-font-smoothing: antialiased;
+  }
+  ::-webkit-scrollbar { width: 5px; height: 5px; }
+  ::-webkit-scrollbar-track { background: #f9fafb; }
+  ::-webkit-scrollbar-thumb { background: #d1d5db; border-radius: 4px; }
+  input, select, textarea { color-scheme: light; }
+}
+
+@layer utilities {
+  .card { background: #fff; border: 1px solid #e5e7eb; border-radius: 12px; padding: 20px; }
+  .card-hover { transition: box-shadow 0.2s, border-color 0.2s; }
+  .card-hover:hover { box-shadow: 0 4px 12px rgba(0,0,0,0.08); border-color: #6366f1; }
+  .input-base {
+    width: 100%; background: #f9fafb; border: 1px solid #e5e7eb;
+    border-radius: 8px; padding: 10px 14px; font-size: 14px; color: #111827;
+    outline: none; transition: border-color 0.15s;
+  }
+  .input-base:focus { border-color: #6366f1; background: #fff; }
+  .btn-primary { background: #6366f1; color: #fff; border: none; border-radius: 8px; padding: 10px 20px; font-weight: 600; font-size: 14px; cursor: pointer; transition: background 0.15s; }
+  .btn-primary:hover { background: #4f46e5; }
+  .btn-primary:disabled { background: #a5b4fc; cursor: not-allowed; }
+  .btn-secondary { background: #f3f4f6; color: #374151; border: 1px solid #e5e7eb; border-radius: 8px; padding: 10px 20px; font-weight: 600; font-size: 14px; cursor: pointer; transition: background 0.15s; }
+  .btn-secondary:hover { background: #e5e7eb; }
+  .tag { display: inline-flex; align-items: center; padding: 3px 10px; border-radius: 20px; font-size: 12px; font-weight: 600; }
+}
